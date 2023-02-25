@@ -23,6 +23,16 @@ variable "location_short" {
   type        = string
 }
 
+variable "topic_id" {
+  description = "Parent Topic Id"
+  type = string
+}
+
+variable "max_delivery_count" {
+  description = "The maximum number of deliveries."
+  type = number
+  default = 1
+}
 variable "auto_delete_on_idle" {
   description = "The idle interval after which the topic is automatically deleted as an ISO 8601 duration. The minimum duration is 5 minutes or PT5M."
   type        = string
