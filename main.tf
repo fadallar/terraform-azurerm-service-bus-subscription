@@ -13,5 +13,5 @@ resource "azurerm_servicebus_subscription" "subscription" {
   forward_dead_lettered_messages_to         = var.forward_dead_lettered_messages_to
   status                                    = var.status
   client_scoped_subscription_enabled        = var.client_scoped_subscription_enabled
-  client_scoped_subscription                = var.client_scoped_subscription
+  #client_scoped_subscription                = var.client_scoped_subscription
 }
